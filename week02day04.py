@@ -34,7 +34,7 @@ for row in range (1,n+1) :
         # print("==>",column, row, startposition, numstart, x)
         if (column>startposition) :
             if(numstart>=row) :
-                break
+            break
             numstart=numstart+1
             # print("=IN=>",column, row, startposition, numstart, x)
             print("* ",end="")
