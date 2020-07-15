@@ -7,7 +7,12 @@ def createDictionary(sample_str):
     for letter in sample_str:
         d[letter]=d.get(letter,0)+1
     return d
+print("-----------------------------------")
+print("-----String to dictionary----------")
+print("-----------------------------------")
 x=input("Enter input:")
+
+
 d=createDictionary(x)
 print(d)
 
@@ -40,10 +45,16 @@ def check_anagram(str1,str2):
     d1=strToDict(str1)
     d2=strToDict(str2)
 
-    if(sorted(d1)==sorted(d2)):
-        return True
-    else:
+    if len(d1) != len(d2):
         return False
+    for key,value in d1.items():
+        if( key not in d2 or d2[key]!=value):
+            return False
+    return True
+
+print("-----------------------------------")
+print("-----------Anagram check-----------")
+print("-----------------------------------")
 a=input("Enter input1: ")
 b=input("Enter input2: ")
 x=check_anagram(a,b)
