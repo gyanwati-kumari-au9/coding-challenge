@@ -1,6 +1,6 @@
 # Q1. Implement merge sort on your own and analyze its time complexity.
      #same as question no. 2
-    #  time complexity= O(n1+n2)
+    #  time complexity= O(nlog(n1+n2))
 
 # Q2.https://practice.geeksforgeeks.org/problems/merge-two-sorted-arrays/0
 
@@ -19,11 +19,11 @@ def mergeArrays(arr1, arr2, n1, n2):
             k = k + 1
             j = j + 1
     while i < n1: 
-        arr3[k] = arr1[i]; 
+        arr3[k] = arr1[i] 
         k = k + 1
         i = i + 1
     while j < n2: 
-        arr3[k] = arr2[j]; 
+        arr3[k] = arr2[j] 
         k = k + 1
         j = j + 1
     print("Array after merging") 
