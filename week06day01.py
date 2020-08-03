@@ -165,23 +165,27 @@ class Animal:
     self.legs=legs
     self.has_tail=has_tail
     self.teeth=32
-  
-class dog(Animal):
-  def __init__(self,legs,has_tail):
-      super().__init__(legs,has_tail)
 
   def walk(self):
-    # raise NotImplementedError()
-    pass
+    raise NotImplementedError()
+    
   def eat(self):
-    # raise NotImplementedError()
-    pass
+    raise NotImplementedError()
+    
   def perform_daily_task(self):
     self.walk()
     self.eat()
+class Dog(Animal):
+  def __init__(self,legs,has_tail):
+    self.legs=legs
+    self.has_tail=has_tail
+  def walk(self):
+    print('Dog will be walk')
+  def eat(self):
+    print('dog will be eat')
 
 if __name__=="__main__":
-  dog1=dog(4,True)
+  dog1=Dog(4,True)
   dog1.perform_daily_task()
 
 
