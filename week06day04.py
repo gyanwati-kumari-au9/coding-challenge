@@ -1,7 +1,7 @@
 #Q.1)https://leetcode.com/problems/valid-parentheses/
 OPENING_BRACKETS = {"{", "[", "("}
-BRACKETS_MAP = {"]": "[", "}": "{", ")": "("}
-class Solution:
+BRACKETS_MAP = {"]": "[", "}": "{", ")": "("}   
+class Solution:    
     def isValid(self, s: str) -> bool:
         if not s: 
             return True
@@ -9,15 +9,34 @@ class Solution:
         if s[0] not in OPENING_BRACKETS:
             return False 
 
-        stack = []
+        stack = Stack()
         for index, bracket in enumerate(s):
             if bracket in OPENING_BRACKETS:
-                stack.append(bracket)
+                stack.push(bracket)
             else:
-                last_opening_bracket = stack.pop()
-                if last_opening_bracket != BRACKETS_MAP[bracket]:  
+                if stack.empty():
                     return False
-        return not stack 
+                else:
+                    last_opening_bracket = stack.pop()
+                    if last_opening_bracket != BRACKETS_MAP[bracket]:  
+                        return False
+        if stack.empty():
+            return True
+        else:
+            return False
+        
+class Stack:
+    def __init__(self):
+        self.__stack = []
+
+    def push(self, x):
+        self.__stack.append(x)
+
+    def pop(self):
+        return self.__stack.pop()
+    
+    def empty(self):
+        return  len(self.__stack)== 0
 
 # Q.2)https://leetcode.com/problems/next-greater-element-ii/
 class Solution:
