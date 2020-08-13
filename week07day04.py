@@ -1,9 +1,9 @@
 #Q.1)https://practice.geeksforgeeks.org/problems/count-leaves-in-binary-tree/1
-class Node:
-    def __init__(self, val):
-        self.right = None
-        self.data = val
-        self.left = None
+# class Node:
+#     def __init__(self, val):
+#         self.right = None
+#         self.data = val
+#         self.left = None
 def countLeaves(root):
     # Code here
     if root is None:
