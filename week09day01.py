@@ -1,3 +1,4 @@
+#https://www.geeksforgeeks.org/maximum-profit-sale-wines/
 #Question 1: Solve the wine dp problem.
 dp=[[]]
 def maxProfit(P,start, end,n, year):
@@ -17,7 +18,7 @@ if __name__=="__main__":
     p=p.split()
     for idx in range(len(p)):
         p[idx]=int(p[idx])
-    dp=[[None for i in range(100)] for i in range (100)]
+    dp=[[None for i in range(w)] for i in range (w)] # create empty array
             
     res=maxProfit(p,0,w-1,w,1)
     print(res)
