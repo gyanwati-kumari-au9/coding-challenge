@@ -1,0 +1,26 @@
+Q. Draw the 7 layer OSI Model?
+Answer:-
+OSI Model:- OSI stands for Open Systems Interconnection.OSI model is a layered server
+ architecture system in which each layer is defined according to a specific function to perform.
+ All these seven layers work collaboratively to transmit the data from one layer to another.
+ 1)Application Layer:- At the very top of the OSI Reference Model stack of layers,
+  we find Application layer which is implemented by the network applications. 
+  These applications produce the data, which has to be transferred over the network. 
+  This layer also serves as a window for the application services to access the network 
+  and for displaying the received information to the user.
+Ex: Application – Browsers, Skype Messenger etc.
+The functions of the Application layer are :
+
+    1)Network Virtual Terminal
+    2)FTAM-File transfer access and management
+    3)Mail Services
+    4)Directory Services
+
+2) Presentation Layer :-Presentation layer is also called the Translation layer.
+The data from the application layer is extracted here and manipulated as per 
+the required format to transmit over the network.
+The functions of the presentation layer are :
+Encryption/ Decryption : Data encryption translates the data into another form or code.
+ The encrypted data is known as the cipher text and the decrypted data is known as plain text.
+  A key value is used for encrypting as well as decrypting data.
+Compression: Reduces the number of bits that need to be transmitted on the network.
