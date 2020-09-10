@@ -25,7 +25,7 @@ _______________________________|________________________________________________
                                |
 _______________________________|____________________________________________________________  
 
-FE 
+FE =>ReactJs
 ---------------------
 Auth(log in/sign up)
 user profile
@@ -60,8 +60,12 @@ Payment Gateway
 DB (secondary server)=>Mongo DB(nosql)
 ----------------------
 Users [Firstname, Lastname, username, Email, password, phone_number,city,profile_pic_link]
-Account [account_type, userId, ]
+Account [account_type, userId]
 Notifications [content,userId]
+stocks [symbol, name, exchange]
+stocksPrice [high,low,open,close,date]
+stocksOrder [userId,stockId,quantity,status,price,date] 
+portfolios [userId,stockId,quantity,price,purchase_date]
 
 
 
