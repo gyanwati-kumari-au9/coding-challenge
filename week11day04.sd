@@ -1,0 +1,77 @@
+Q.Design an online stock brokerage app.
+Answer:-
+Features(online stock brokerage app):-
+                               |
+                               |
+Product Goal                   | Buy and Sale products from app
+                               |
+_______________________________|____________________________________________________________  
+                               | 
+                               |Auth(log in/sign up)
+                               |User profile
+Product features & Scope       |Putting trades on stocks
+                               |Real-Time portfolios
+                               |Deposits
+                               |Search 
+                               |Analytics
+                               |Notifications
+                               | 
+                               |
+                               | 
+_______________________________|_________________________________________________________  
+                               |
+                               |
+  Key Algorithms               | 
+                               |
+_______________________________|____________________________________________________________  
+
+FE =>ReactJs
+---------------------
+Auth(log in/sign up)
+user profile
+home page
+Demat Account
+Trading Account
+Online Share Trading
+Share Market status
+IPO
+Research Call
+Derivatives
+Commodities Trading
+Smart Money
+PriceChart
+product Search
+Buy & Sale
+
+
+BE(Primary server)=>NodeJs
+---------------------
+Auth(log in/sign up)
+User profile
+Putting trades on stocks
+Real-Time portfolios
+Deposits
+Search 
+Analytics
+Notifications
+PriceChart data
+Payment Gateway
+
+DB (secondary server)=>Mongo DB(nosql)
+----------------------
+Users [Firstname, Lastname, username, Email, password, phone_number,city,profile_pic_link]
+Account [account_type, userId]
+Notifications [content,userId]
+stocks [symbol, name, exchange]
+stocksPrice [high,low,open,close,date]
+stocksOrder [userId,stockId,quantity,status,price,date] 
+portfolios [userId,stockId,quantity,price,purchase_date]
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,94 @@
+Q. Draw the 7 layer OSI Model?
+Answer:-
+OSI Model:- OSI stands for Open Systems Interconnection.OSI model is a layered server
+ architecture system in which each layer is defined according to a specific function to perform.
+ All these seven layers work collaboratively to transmit the data from one layer to another.
+Architecture of OSI layers:-
+                               _____________________________________
+                               |         Application Layer          | __________________
+                               |____________________________________|                   |
+                                                                                        |
+                               _____________________________________                    |PDU(data)
+                               |        Presentation Layer          |                   | software
+                               |____________________________________|                   | layers(Host layers)
+                                                                                        |
+                               _____________________________________                    |
+                               |         Session Layer              |___________________|               
+                               |____________________________________| 
+
+                               _____________________________________
+                               |         Transport Layer            |__________________Heart of OSI
+                               |____________________________________|                     PDU(segment,datagram)
+
+                               _____________________________________
+                               |         Network Layer              |__________________  PDU(Packet)
+                               |____________________________________|                  |
+                                                                                       |
+                               _____________________________________                   |
+                               |         Data Layer                 |  PDU(Frame)      |Hardware
+                               |____________________________________|                  |layers(Media layers)
+                                                                                       |
+                               _____________________________________                   |
+                               |         Physical  Layer            |__________________|
+                               |____________________________________| PDU(Bit,Symbol)
+
+PDU - protocol data unit
+
+ 1)Application Layer:-
+Application layer interacts with an application program, which is the highest level of OSI model. 
+The application layer is the OSI layer, which is closest to the end-user. It means OSI application 
+layer allows users to interact with other software application.
+Application layer interacts with software applications to implement a communicating component. 
+The interpretation of data by the application program is always outside the scope of the OSI model.
+Example of the application layer is an application such as file transfer, email, remote login, etc.
+
+The function of the Application Layers are:
+Application-layer helps you to identify communication partners, determining resource availability, and synchronizing communication.
+It allows users to log on to a remote host
+This layer provides various e-mail services
+This application offers distributed database sources and access for global information about various objects and services.
+2)Presentation Layer:-
+Presentation layer allows you to define the form in which the data is to exchange between the two communicating entities.
+It also helps you to handles data compression and data encryption.
+
+The function of Presentation Layers:
+Character code translation from ASCII to EBCDIC.
+Data compression: Allows to reduce the number of bits that needs to be transmitted on the network.
+Data encryption: Helps you to encrypt data for security purposes — for example, password encryption.
+It provides a user interface and support for services like email and file transfer.
+3)Session Layer:-
+Session Layer controls the dialogues between computers. It helps you to establish starting and terminating the connections between the local and remote application.
+This layer request for a logical connection which should be established on end user's requirement. This layer handles all the important log-on or password validation.
+Session layer offers services like dialog discipline, which can be duplex or half-duplex. It is mostly implemented in application environments that use remote procedure calls.
+
+The function of Session Layer:
+It establishes, maintains, and ends a session.
+Session layer enables two systems to enter into a dialog
+It also allows a process to add a checkpoint to steam of data.
+4)Network Layer:-
+The network layer provides the functional and procedural means of transferring variable length data sequences from one node to another connected in "different networks".
+Message delivery at the network layer does not give any guaranteed to be reliable network layer protocol.
+Layer-management protocols that belong to the network layer are:
+routing protocols
+multicast group management
+network-layer address assignment.
+5) Transport Layer:
+The transport layer builds on the network layer to provide data transport from a process on a source machine to a process on a destination machine.
+It is hosted using single or multiple networks, and also maintains the quality of service functions.
+The functions of Transport Layers:
+It divides the message received from the session layer into segments and numbers them to make a sequence.
+Transport layer makes sure that the message is delivered to the correct process on the destination machine.
+It also makes sure that the entire message arrives without any error else it should be retransmitted.
+6)Data Link Layer:-
+Data link layer corrects errors which can occur at the physical layer. 
+The layer allows you to define the protocol to establish and terminates a connection between two connected network devices.
+The data link layer is subdivided into two types of sublayers:
+
+*Media Access Control (MAC) layer- It is responsible for controlling how device in a network gain access to medium and permits to transmit data.
+*Logical link control layer- This layer is responsible for identity and encapsulating network-layer protocols and allows you to find the error.
+7) Physical Layer:-
+The physical layer helps you to define the electrical and physical specifications of the data connection.
+ This level establishes the relationship between a device and a physical transmission medium. 
+ The physical layer is not concerned with protocols or other such higher-layer items.
+
+Examples of hardware in the physical layer are network adapters, ethernet, repeaters, networking hubs, etc.

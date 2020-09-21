@@ -1,0 +1,72 @@
+Q.List down all the features of adb schema for a food delivery startup like Zomato/Swiggy 
+Answer:-
+Features(zomato-food delivery):-
+                               |
+                               |
+Product Goal                   | Food delivery from nearby restaurants
+                               |
+_______________________________|____________________________________________________________  
+                               |User : Search food, order food, give rating , useCoupon ,login
+                               |Restaurants: list restaurants, manage food items , manage price, deliver orders, 
+Product Scope                  |              reports, login
+                               |Delivery: pick order, deliver order, see earning, login
+_______________________________|____________________________________________________________  
+                               |Restaurants on boarding
+                               |Inventory supply tracking
+Product features               |customer profiling
+                               |Digital invoicing via SMS
+                               | Online payment
+                               | Ingredient-level management
+                               | Sales analytics
+                               | MIS reports generation
+                               | Menu items alteration
+                               | Cash transactions
+                               | Digital invoicing via email
+_______________________________|_________________________________________________________  
+                               |
+                               |Distance based product searching, customer profiling,
+  Key Algorithms               | food delivery tracking, delivers boy allotment
+                               |
+_______________________________|____________________________________________________________  
+
+Schema:-
+Zomato(food delivery)
+1) Restaurants
+       Name
+       address
+       contact number
+       geocode
+       rating
+       Status(open/close)
+2) Menu
+    items code
+    items Name
+    price
+    category(south indian food, north indian food etc)
+    veg_nonveg
+3) customer
+     id
+     Name
+     address
+     mobileNo
+     pinCode
+     city
+4) order :
+      custid
+      deliver address
+      Coupon
+      payment mode(online/cash)
+      total amount
+5) order details:
+     items
+     quantity
+     price
+6) delivery boy
+    id proof
+    Name
+    address
+    mobileNo
+
+     
+    
+                
