@@ -1,0 +1,70 @@
+#para > p{
+    display: inline-block;
+    width: 30%;
+    margin: 5%;
+    padding: 3%;
+}
+.left{
+    position: static;
+    background-color: steelblue;
+}
+.right{
+    position: static;
+    background-color: coral;
+   
+}
+
+#get > p{
+    display: inline-block;
+    width: 20%;
+    margin: 10%;
+    padding: 3%;
+}
+.get-left{
+    position: relative;
+    background-color: blueviolet;
+}
+.get-right{
+    position: relative;
+    background-color: grey;
+   
+}
+
+
+#story > p{
+    display: inline-block;
+    width: 15%;
+    margin: 8%;
+    padding: 3%;
+}
+.story-left{
+    position: fixed;
+    background-color: green;
+}
+.story-right{
+    position: fixed;
+    background-color: slateblue;
+   
+}
+
+
+#intro > p{
+    display: inline-block;
+    width: 10%;
+    margin: 5%;
+    padding: 3%;
+}
+.intro-left{
+    position: absolute;
+    background-color: gold;
+}
+.intro-right{
+    position: absolute;
+    background-color: palegreen;
+   
+}
+
+footer{
+    background-color: coral;
+    text-align: center;
+}
