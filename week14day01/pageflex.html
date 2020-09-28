@@ -1,0 +1,146 @@
+<!-- Q.List all flex properties of parent and child in a table format -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8">
+        <meta name="viewport" content="width=device-width">
+        <title>HTML page</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="./pageflex.html">Home </a>
+        </div><br/><br/><br/><br/>
+        <div class="container">
+            <h1><b>List of Parent flex properties (flex container):-</b></h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Properties Name</th>
+                        <th>Value</th>
+                        <th>Descriptions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>display</td>
+                        <td>flex</td>
+                        <td>.container {
+                            display: flex; /* or inline-flex */
+                          }</td>
+                    </tr>
+                    <tr>
+                        <td>flex-direction</td>
+                        <td>row/column</td>
+                        <td>.container {
+                            flex-direction: row | row-reverse | column | column-reverse;
+                          }</td>
+                    </tr>
+                    <tr>
+                        <td>flex-wrap</td>
+                        <td>nowrap/wrap</td>
+                        <td>.container {
+                            flex-wrap: nowrap | wrap | wrap-reverse;
+                          }</td>
+                    </tr>
+                    <tr>
+                        <td>flex-flow</td>
+                        <td>row nowrap(default vale)</td>
+                        <td>.container {
+                            flex-flow: column wrap;
+                          }</td>
+                    </tr>
+                    <tr>
+                        <td>justify-content</td>
+                        <td>flex-start/flex-end/centre/space between/space-around/space-evenly</td>
+                        <td>.container {
+                            justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right ... + safe | unsafe;
+                          }</td>
+                    </tr>
+                    <tr>
+                        <td>align-items</td>
+                        <td>stretch/flex-start/flex-end....etc</td>
+                        <td>.container {
+                            align-items: stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end + ... safe | unsafe;
+                          }</td>
+                    </tr>
+                    <tr>
+                        <td>align-content</td>
+                        <td>flex-start / flex-end /center / space-between /  stretch / start / end /baseline etc </td>
+                        <td>.container {
+                            align-content: flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline | first baseline | last baseline + ... safe | unsafe;
+                          }</td>
+                    </tr>
+                </tbody>
+            </table><br/<br/>
+        </div><br/><br/>
+        <div class="item">
+            <h2><b>List of child flex properties(flex items):-</b></h2>
+            <table>
+               <thead>
+                   <tr>
+                        <th>Properties Name</th>
+                        <th>Value</th>
+                        <th>Descriptions</th>
+                   </tr>
+               </thead>
+               <tbody>
+                   <tr>
+                       <td>order</td>
+                       <td>default is 0 (2,5,....)</td>
+                       <td>.item {
+                        order: 5; /* default is 0 */
+                      }</td>
+                   </tr>
+                   <tr>
+                       <td>flex-grow</td>
+                       <td>1,2.....(default 0)</td>
+                       <td>.item {
+                        flex-grow: 4; /* default 0 */
+                      }</td>
+                   </tr>
+                   <tr>
+                       <td>flex-shrink</td>
+                       <td>2,3...(default 1)</td>
+                       <td>.item {
+                        flex-shrink: 3; /* default 1 */
+                      }</td>
+                   </tr>
+                   <tr>
+                       <td>flex-basis</td>
+                       <td>default auto</td>
+                       <td>.item {
+                        flex-basis:  | auto; /* default auto */
+                      }</td>
+                   </tr>
+                   <tr>
+                       <td>flex</td>
+                       <td>flex-basis,flex-grow,flex-shrink(default none)</td>
+                       <td>.item {
+                        flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
+                      }</td>
+                   </tr>
+                   <tr>
+                       <td>align-self</td>
+                       <td>baseline,centre,..(default auto)</td>
+                       <td>.item {
+                        align-self: auto | flex-start | flex-end | center | baseline | stretch;
+                      }</td>
+                   </tr>
+               </tbody>
+            </table><br/><br/>
+        </div><br/><br/>
+        <div>
+            <h3><b>Sample</b></h3>
+            <ul class="flex-container">
+                <li class="flex-item">1</li>
+                <li class="flex-item">2</li>
+                <li class="flex-item">3</li>
+                <li class="flex-item">4</li>
+                <li class="flex-item">5</li>
+                <li class="flex-item">6</li>
+            </ul>
+        </div>
+    </body>
+    <footer>&copy;Flexbox</footer>
+</html>
