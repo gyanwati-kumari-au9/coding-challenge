@@ -1,0 +1,220 @@
+<!-- Design a e-commerce webpage like flipkart/myntra with the following components:
+- Header with logo and important links
+- Sidebar with multiple filters
+- Main content area with product grid layout
+- Footer with set navigation -->
+<!DOCTYPE html>
+<html lang="en">
+    <head >
+        <meta charset="UTF-8">
+        <link href="style.css" rel="stylesheet">
+        <title>myntra</title>
+    </head>
+    <body>
+        <div class="navbar">
+            <img class="logo" src="myntra.PNG" />
+            <a href="./Home.html">MEN</a>
+            <a href="./Home.html">WOMEN</a>
+            <a href="./Home.html">KIDS</a>
+            <a href="./Home.html">HOME & LIVING</a>
+            <a href="./Home.html">OFFERS</a>
+            <input type="search" placeholder="search for products, brands and more" />
+            <button type="button">Find</button>
+            <button class="in" type="button" >LogIn</button>
+            <button type="button">SignUp</button>
+        </div><br/><br/>
+       
+        <div  class="container">
+            <div class="item-1">
+                <h1><b>FILTERS</b></h1>
+                <ul class="menu">
+                    <h2>CATEGORIES</h2>
+                   <li class="menu-item"> <label><input type="checkbox" value="CATEGORIES" name="kurtas" />Kurtas(31191)</label> </li>
+                   <li class="menu-item">   <label><input type="checkbox" value="CATEGORIES" name="kurta set" />Kurta Sets(11261)</label></li>
+                </ul> 
+                <ul class="menu-brand">
+                    <h2>BRAND</h2>
+                    <li class="menu-item"><label><input type="checkbox" value="CATEGORIES" name="kurtas" />Anouk(3345)</label></li>
+                    <li class="menu-item"><label><input type="checkbox" value="CATEGORIES" name="kurta set" />Biba(1497)</label></li>
+                    <li class="menu-item"><label><input type="checkbox" value="CATEGORIES" name="kurta set" />W(1469)</label></li>
+                    <li class="menu-item"><label><input type="checkbox" value="CATEGORIES" name="kurta set" />HERE&NOW(1430)</label></li>
+                    <li class="menu-item"><label><input type="checkbox" value="CATEGORIES" name="kurta set" />Libas(1392)</label></li>
+                    <li class="menu-item"><label><input type="checkbox" value="CATEGORIES" name="kurta set" />AURELIA(1049)</label></li>
+                    <li class="menu-item"><label><input type="checkbox" value="CATEGORIES" name="kurta set" />Varanga(961)</label></li> 
+                </ul>
+                <ul class="menu-price">
+                    <h2>PRICE</h2>
+                   <li class="menu-item"> <label><input type="checkbox" value="CATEGORIES" name="kurtas" />Rs. 239 to Rs. 15805(42411)</label> </li>
+                   <li class="menu-item">   <label><input type="checkbox" value="CATEGORIES" name="kurta set" />Rs. 15805 to Rs. 31371(27)</label></li>
+                   <li class="menu-item">   <label><input type="checkbox" value="CATEGORIES" name="kurta set" />Rs. 31371 to Rs. 46937(13)</label></li>
+                </ul> 
+                <ul class="menu-color">
+                    <h2>COLOR</h2>
+                   <li class="menu-item"> <label><input type="checkbox" value="CATEGORIES" name="kurtas" />Blue (3952)</label> </li>
+                   <li class="menu-item">   <label><input type="checkbox" value="CATEGORIES" name="kurta set" />Black (3565)</label></li>
+                   <li class="menu-item">   <label><input type="checkbox" value="CATEGORIES" name="kurta set" />Navy Blue (3344)</label></li>
+                   <li class="menu-item"> <label><input type="checkbox" value="CATEGORIES" name="kurtas" />Green (3266)</label> </li>
+                   <li class="menu-item">   <label><input type="checkbox" value="CATEGORIES" name="kurta set" />Pink (3156)</label></li>
+                   <li class="menu-item">   <label><input type="checkbox" value="CATEGORIES" name="kurta set" />White (2397)</label></li>
+                   <li class="menu-item">   <label><input type="checkbox" value="CATEGORIES" name="kurta set" />Off White (2321)</label></li>
+                </ul>
+                <ul class="menu-discount">
+                    <h2> DISCOUNT RANGE</h2>
+                   <li class="menu-item"> <label><input type="radio" value="CATEGORIES" name="kurtas" />10% and above</label> </li>
+                   <li class="menu-item">   <label><input type="radio" value="CATEGORIES" name="kurta set" />20% and above</label></li>
+                   <li class="menu-item">   <label><input type="radio" value="CATEGORIES" name="kurta set" />30% and above</label></li>
+                   <li class="menu-item"> <label><input type="radio" value="CATEGORIES" name="kurtas" />40% and above</label> </li>
+                   <li class="menu-item">   <label><input type="radio" value="CATEGORIES" name="kurta set" />50% and above</label></li>
+                   <li class="menu-item">   <label><input type="radio" value="CATEGORIES" name="kurta set" />60% and above</label></li>
+                   <li class="menu-item">   <label><input type="radio" value="CATEGORIES" name="kurta set" />70% and above</label></li>
+                   <li class="menu-item">   <label><input type="radio" value="CATEGORIES" name="kurta set" />80% and above</label></li>
+                </ul> 
+            </div>
+            <div class="item-2">
+                <div class="products">
+                    <select class="prod-selection">
+                        <option>Bundles</option>
+                    </select>
+                    <select class="prod-selection"><option>Size</option></select>
+                    <select class="prod-sort">
+                        <option>sort by:Recommended</option>
+                        <option>What's new</option>
+                        <option>Popularity</option>  
+                    </select>
+                </div>
+                <div class="card">
+                    <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/8969717/2019/3/28/6018cc0a-56b8-483f-9576-8644f5bdedd21553778956066-Indo-Era-Beige-Solid-Straight-Kurta-Sets-9801553778954623-6.jpg" />
+                    <h1>Indo Era</h1>
+                    <p class="price">Rs. 1199</p>
+                    <p>Muted Hazelnut kurta set</p>
+                    <p><button>WISHLIST</button></p>
+                </div>
+                <div class="card">
+                    <img src=" <div class="card">
+                        <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/12041566/2020/9/4/df435e8f-fd2e-42e4-bdc9-a5ba40670a571599201996126-HERENOW-Women-Kurtas-7811599201994075-1.jpg" />
+                        <h1>HERE & NOW</h1>
+                        <p class="price">Rs. 999</p>
+                        <p>Printed & Straight Kurta</p>
+                        <p><button>WISHLIST</button></p>
+                </div>
+                <div class="card">
+                    <img src=" <div class="card">
+                        <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/12122358/2020/8/21/f7528b53-a446-4494-9eed-222dcf9fcf931598007423705-Indo-Era-Women-Black--Teal-Yoke-Design-Kurta-with-Palazzos---1.jpg
+                        " />
+                        <h1>Indo Era</h1>
+                        <p class="price">Rs. 1399</p>
+                        <p>Yoke Design Kurta with Plazz</p>
+                        <p><button>WISHLIST</button></p>
+                </div>
+                <div class="card">
+                    <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/8969717/2019/3/28/6018cc0a-56b8-483f-9576-8644f5bdedd21553778956066-Indo-Era-Beige-Solid-Straight-Kurta-Sets-9801553778954623-6.jpg" />
+                    <h1>Indo Era</h1>
+                    <p class="price">Rs. 1199</p>
+                    <p>Muted Hazelnut kurta set</p>
+                    <p><button>WISHLIST</button></p>
+                </div>
+                <div class="card">
+                    <img src=" <div class="card">
+                        <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/12041566/2020/9/4/df435e8f-fd2e-42e4-bdc9-a5ba40670a571599201996126-HERENOW-Women-Kurtas-7811599201994075-1.jpg" />
+                        <h1>HERE & NOW</h1>
+                        <p class="price">Rs. 999</p>
+                        <p>Printed & Straight Kurta</p>
+                        <p><button>WISHLIST</button></p>
+                </div>
+                <div class="card">
+                    <img src=" <div class="card">
+                        <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/12122358/2020/8/21/f7528b53-a446-4494-9eed-222dcf9fcf931598007423705-Indo-Era-Women-Black--Teal-Yoke-Design-Kurta-with-Palazzos---1.jpg
+                        " />
+                        <h1>Indo Era</h1>
+                        <p class="price">Rs. 1399</p>
+                        <p>Yoke Design Kurta with Plazz</p>
+                        <p><button>WISHLIST</button></p>
+                </div>
+                <div class="card">
+                    <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/8969717/2019/3/28/6018cc0a-56b8-483f-9576-8644f5bdedd21553778956066-Indo-Era-Beige-Solid-Straight-Kurta-Sets-9801553778954623-6.jpg" />
+                    <h1>Indo Era</h1>
+                    <p class="price">Rs. 1199</p>
+                    <p>Muted Hazelnut kurta set</p>
+                    <p><button>WISHLIST</button></p>
+                </div>
+                <div class="card">
+                    <img src=" <div class="card">
+                        <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/2388909/2018/1/15/11515994464628-Libas-Women-Black--Maroon-Printed-A-Line-Kurta-3451515994464496-1.jpg" />
+                        <h1>HERE & NOW</h1>
+                        <p class="price">Rs. 999</p>
+                        <p>Printed & Straight Kurta</p>
+                        <p><button>WISHLIST</button></p>
+                </div>
+            </div>   
+        </div>
+        
+    </body>
+    <footer>
+        <div class="container">
+            <div class="item">
+                <ul class="pd">
+                    <li><h3>ABOUT</h3></li>
+                    <li><a href="./Home.html">MEN</a></li>
+                    <li><a href="./Home.html">WOMEN</a></li>
+                    <li><a href="./Home.html">KIDS</a></li>
+                    <li><a href="./Home.html">HOME & LIVING</a></li>
+                    <li> <a href="./Home.html">OFFERS</a></li>
+                </ul>  
+            </div>
+            <div class="item">
+                <ul class="pd">
+                    <li><h3>HELP</h3></li>
+                    <li><a href="./Home.html">Payments</a></li>
+                    <li><a href="./Home.html">shipping</a></li>
+                    <li><a href="./Home.html">cancelations & Return</a></li>
+                    <li><a href="./Home.html">FAQ</a></li>
+                    <li> <a href="./Home.html">Report</a></li>
+                </ul> 
+            </div>
+            <div class="item">
+                <ul class="pd">
+                    <li><h3>POLICY</h3></li>
+                    <li><a href="./Home.html">Returs</a></li>
+                    <li><a href="./Home.html">Terms to use</a></li>
+                    <li><a href="./Home.html">Secuirty</a></li>
+                    <li><a href="./Home.html">Privacy</a></li>
+                </ul> 
+            </div>
+            <div class="item">
+                <ul class="pd">
+                    <li> <h3>SOCIAL</h3></li>
+                    <li><a href="./Home.html">Facebook</a></li>
+                    <li><a href="./Home.html">Twitter</a></li>
+                    <li><a href="./Home.html">Youtube</a></li>
+                </ul> 
+            </div>
+            <div class="item">
+               <li> <h3>Mail Us:</h3></li>
+               <li><p>Flipkart Internet Private Limited,
+                Buildings Alyssa, Begonia &<br/> 
+                Clove Embassy Tech Village,<br/>
+                Outer Ring Road, Devarabeesanahalli Village,<br/> 
+                Bengaluru, 560103,<br/> 
+                Karnataka, India</p></li>
+            </div>
+            <div class="item">
+                <li><h3>Registered Office Address:</h3></li>
+                <li><p>Flipkart Internet Private Limited,<br/>
+                    Buildings Alyssa, Begonia &<br/>
+                    Clove Embassy Tech Village,<br/>
+                    Outer Ring Road, Devarabeesanahalli Village,<br/> 
+                    Bengaluru, 560103,<br/>   
+                    Karnataka, India<br/> 
+                    CIN : U51109KA2012PTC066107<br/> 
+                    Telephone: 1800 208 9898</p></li>
+            </div>
+        </div>
+        <div class="container">
+            <div class="item"><p>Sell On Flipkart</p></div>
+            <div class="item"><p>Advertise</p></div>
+            <div class="item"><p>Gift Cards</p></div>
+            <div class="item"><p>Help Center</p></div>
+            <div class="item"><p>  &copy;2007-2020 myntra.com</p></div>
+        </div>
+    </footer>
+</html>
