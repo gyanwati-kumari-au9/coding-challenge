@@ -54,36 +54,6 @@ class BinaryTree{
 
 }
 
-// class Solution{
-//     levelOrder(root){
-//         var res = [];
-//         if (root == null){
-//             return res
-//         }
-//         var queue = [];
-//         queue.push(root);
-//         while(queue.length){
-//             var level = [];
-//             var node = queue.pop(0);
-//             level.push(node.x);
-//             if (node.left != null){
-//                 queue.push(node.left);
-//             }
-//             if (node.right != null){
-//                 queue.push(node.right);
-//             }
-//             res.push(level);
-//         }
-//         return res
-//     }
-
-//     readTree(arrData){
-      
-        
-
-//     }
-// }
-
 var levelOrder = function(root) {
     const levels = []
 
@@ -116,10 +86,7 @@ var levelOrder = function(root) {
 }
 
 
-// s = new Solution();
 var inputArr = [3,9,20,null,null,15,7];
-// tree=s.readTree(inputArr);
-
 var bt = new BinaryTree();
 for (let i=0; i<inputArr.length;i++){
     bt.insert(inputArr[i]);
