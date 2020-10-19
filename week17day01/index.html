@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <h2>Create a simple calculator using JS with the UI looking like this-<br/>
+            1. use inputs of type number.<br/>
+            2. use  functions as and when neccessary.
+        </h2>
+    </header>
+    <main class="main-calc">
+        <table>
+            <tr>
+                <th>JS Calculator</th>
+            </tr>
+            <tr>
+                <td><input name="number1" type="text" size=10 id='num1'/></td>
+            </tr>
+            <tr>
+                <td><input name="number2" type="text" size=10 id='num2'/></td>
+            </tr>
+            <tr>
+            <td colspan="3">
+                <button onclick="calculatorRes('1')">+</button>
+                <button onclick="calculatorRes('2')">-</button>
+                <button onclick="calculatorRes('3')">*</button>
+                <button onclick="calculatorRes('4')">/</button>
+            </td>
+            </tr>
+            <tr>
+                <td> <input type="text" id='result' readonly ></td>
+            </tr>
+        </table>
+    </main>
+
+    <script src="script.js" ></script>
+</body>
+</html>
