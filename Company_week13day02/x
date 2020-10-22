@@ -1,0 +1,12 @@
+   if self.root is None: 
+            self.root= Node(val)
+            return self.root 
+        else: 
+            if self.root.info == val: 
+                return self.root 
+            elif self.root.info < val: 
+                self.root.left = self.insert(val)  
+            else: 
+                self.root.right = self.insert(val) 
+               
+        return self.root 
