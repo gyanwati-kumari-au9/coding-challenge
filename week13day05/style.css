@@ -1,0 +1,94 @@
+#lst{
+    background-color: royalblue;
+}
+ul{
+    list-style: none;  
+}
+
+li{
+    background-color: whitesmoke;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 240px;
+    box-shadow: 2px 2px 5px 0 #ccc;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+li:hover{
+    background-color: teal;
+    width: 300px;
+    color: white;
+    transition: width 0.5s ease ;
+
+}
+
+a:link {
+    color: blue;
+    text-decoration: none;
+    transition: all 1s linear 0;
+   
+}
+
+a:visited{
+    color: coral;
+}
+
+a:hover{
+    color: green;
+}
+
+a:active{
+    color: palevioletred;
+}
+
+input , button{
+    padding: 10px;
+    border-radius: 10px;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid magenta;
+}
+
+input:disabled{
+    background-color: paleturquoise;
+    color: grey;
+}
+
+button:hover{
+    transform: scale(1.5);
+    transition: transform 0.5s ease;
+}
+
+#p{
+    background-image: linear-gradient(yellow,teal);
+    padding: 20px;
+    margin: 5%;
+    width: 100%;
+    margin-left: 0;
+}
+
+.left{
+    background-image: linear-gradient(lightpink,steelblue);   
+}
+
+.right{
+    background-image: radial-gradient(seagreen,coral);
+}
+
+#para > p{
+    display: inline-block;
+    width: 40%;
+    margin: 3%;
+    padding: 30px;
+    text-align: center;
+    color: honeydew;
+}
+
+footer{
+    text-align: center;
+    background-color: royalblue;
+    color: whitesmoke;
+}

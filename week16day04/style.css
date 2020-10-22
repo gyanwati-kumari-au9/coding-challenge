@@ -1,0 +1,16 @@
+body{
+    background-color: lightcoral;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    font-size: 36pt;
+}
+th{
+    font-size: 25pt;
+}
+td{
+    font-size: 18pt;
+}
+th,td{
+    border: 1px solid white;
+}

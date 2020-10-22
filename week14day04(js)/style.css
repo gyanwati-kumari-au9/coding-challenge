@@ -1,0 +1,56 @@
+.logo{
+    position: fixed;
+    background-color: white;
+    width: 100%;  
+    padding: 10px; 
+    margin-top: -8px;
+    z-index: 999;
+}
+.navbar{
+    position: fixed;
+    background-color:#9ACD32;
+    color: white;
+    width: 100%;
+    padding:15px;
+    margin-top: 44px;
+    z-index: 999;
+}
+.navbar > a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-right: 1000px;
+   
+}
+
+.navbar > a:hover{
+    color: white;
+    text-decoration: underline;
+    
+}
+
+input {
+    padding: 5px;
+    border-radius: 10px;
+    width: 250px;
+    margin: 5px;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #9ACD32;
+}
+
+button {
+    padding: 5px;
+    border-radius: 10px;
+    width: 100px;
+    margin: 5px;
+    color: white;
+    background-color: #FC8019;
+}
+button:hover{
+    transform: scale(1.5);
+    transition: transform 0.5s ease;
+}
