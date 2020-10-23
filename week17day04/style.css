@@ -1,0 +1,22 @@
+header{
+    font-family: sans-serif;
+    font-weight: 18pt;
+    background-color: royalblue;
+    text-shadow: 1px 1px white;
+    color: orange;
+    padding: 20px;
+    margin-bottom: 80px;
+}
+li{
+    list-style: none;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.highlight {
+    background: green;
+    color: orange;
+  }
