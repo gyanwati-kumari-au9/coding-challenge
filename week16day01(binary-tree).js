@@ -14,45 +14,61 @@
 //     [15,7]
 //     ]
 
-class Node {
-    constructor(val){
-        this.val=val;
-        this.right=null;
-        this.left=null;
-    }
-}
+// class Node {
+//     constructor(val){
+//         this.val=val;
+//         this.right=null;
+//         this.left=null;
+//     }
+// }
 
-class BinaryTree{
-    constructor(){
-        this.root=null;
-    }
+// class BinaryTree{
+//     constructor(){
+//         this.root=null;
+//     }
 
-    insert(val){
-        let newNode= new Node (val)
-        if (!this.root) this.root=newNode;
-        let current =this.root;        
-        while (true) {
-            if(val === current.val) return undefined;
-            if(current.val<val){
-                if (current.right===null){
-                    current.right=newNode;
-                    return this
-                }
-                    else
-                    current=current.right}
-            if(current.val>val){
-                if (current.left===null){
-                    current.left=newNode;
-                    return this
-                }
-                    else
-                    current=current.left}
+//     insert(val){
+//         let newNode= new Node (val)
+//         if (!this.root) this.root=newNode;
+//         let current =this.root;        
+//         while (true) {
+//             if(val === current.val) return undefined;
+//             if(current.val<val){
+//                 if (current.right===null){
+//                     current.right=newNode;
+//                     return this
+//                 }
+//                     else
+//                     current=current.right}
+//             if(current.val>val){
+//                 if (current.left===null){
+//                     current.left=newNode;
+//                     return this
+//                 }
+//                     else
+//                     current=current.left}
                 
-        }
-    }
+//         }
+//     }
 
 
-}
+// }
+
+function TreeNode(val) {
+    this.val = val;
+    this.left = this.right = null;
+ }
+/**
+* Definition for a binary tree node.
+* function TreeNode(val) {
+*     this.val = val;
+*     this.left = this.right = null;
+* }
+*/
+/**
+* @param {TreeNode} root
+* @return {number}
+*/
 
 var levelOrder = function(root) {
     const levels = []
@@ -86,10 +102,9 @@ var levelOrder = function(root) {
 }
 
 
-var inputArr = [3,9,20,null,null,15,7];
-var bt = new BinaryTree();
-for (let i=0; i<inputArr.length;i++){
-    bt.insert(inputArr[i]);
-}
-res = levelOrder(bt.root);
-console.log(res);
+root = new TreeNode(3);
+root.left = new TreeNode(9);
+root.right = new TreeNode(20);
+root.left.left = new TreeNode(15);
+root.left.right = new TreeNode(7);
+console.log("level :" ,levelOrder(root));
