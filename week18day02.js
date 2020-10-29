@@ -43,20 +43,29 @@ var getSum = function (root, sum, now, res) {
   getSum(root.right, sum - root.val, Array.from(now), res);
 };
 
+var arr = [5,4,8,11,null,13,4,7,2,null,null,5,1],
+    tree;
 
+function insertBinTree (t = {value: void 0, left: void 0, right: void 0}, n){
+  t.value !== void 0 ? t.value > n ? t.left = insertBinTree(t.left,n)
+                                   : t.right = insertBinTree(t.right,n)
+                     : t.value = n;
+  return t;
+}
 
-rt = new TreeNode(5);
-rt.left = new TreeNode(4);
-rt.right = new TreeNode(8);
-rt.left.left = new TreeNode(11);
-rt.left.right = new TreeNode(null);
-rt.left.right.left = new TreeNode(13);
-rt.left.right.right = new TreeNode(4);
-rt.left.left.left= new TreeNode(7);
-rt.left.left.right = new TreeNode(2);
-rt.left.right.left = new TreeNode(null);
-rt.left.right.right = new TreeNode(null);
+tree = arr.reduce(insertBinTree, void 0);
+// rt = new TreeNode(5);
+// rt.left = new TreeNode(4);
+// rt.right = new TreeNode(8);
+// rt.left.left = new TreeNode(11);
+// rt.left.right = new TreeNode(null);
+// rt.left.right.left = new TreeNode(13);
+// rt.left.right.right = new TreeNode(4);
+// rt.left.left.left= new TreeNode(7);
+// rt.left.left.right = new TreeNode(2);
+// rt.left.right.left = new TreeNode(null);
+// rt.left.right.right = new TreeNode(null);
 // rt.left.left.right.left = new TreeNode(5);
 // rt.left.left.right.right = new TreeNode(1);
 var s = 22;
-console.log(pathSum(rt,s));
+console.log(pathSum(tree,s));
